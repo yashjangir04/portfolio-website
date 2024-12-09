@@ -15,7 +15,7 @@ html {
 
 body {
     position: relative;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: "Nunito", sans-serif;
 }
@@ -25,13 +25,14 @@ body {
     color: black;
 }
 .intro {
-    width: 100vw;
+    width: 100%;
     height: 95vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
+    overflow: hidden;
 }
 #initials{
     transition: 0.2s ease-out;
@@ -40,7 +41,7 @@ body {
     scale: 1.2;
 }
 .outernav {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -48,8 +49,9 @@ body {
 }
 
 .nav {
+    margin-top: 0;
     background-color: white;
-    width: 100vw;
+    width: 100%;
     height: 78px;
     position: fixed;
     display: flex;
@@ -196,14 +198,14 @@ body {
 
 .aboutsec {
     margin-top: 3rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .lowerhalfweb {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -432,6 +434,7 @@ body {
     border-radius: 25px
 }
 
+
 @keyframes rotation {
     0% {
         transform: translateX(0)
@@ -516,6 +519,13 @@ body {
     margin-top:  125px;
 }
 
+.textin1{
+    font-size: 90px;
+}
+.textin2{
+    font-size: 22px; 
+    text-align: center;
+}
 #t5{
     font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
@@ -621,4 +631,124 @@ body {
 }
 .sm1:hover,.sm2:hover,.sm3:hover,.sm4:hover, .gm:hover{
     scale: 1.2;
+}
+
+/* General styles for mobile devices (max-width: 768px) */
+@media (max-width: 1267px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .abtleft{
+        height: 400px;
+        width: 400px;
+    }
+    .abtright {
+        max-width: 400px;
+    }
+    .right{
+        display: none;
+    }
+    .aboutsec {
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        position: relative;
+        width:100%;
+        overflow-x: hidden;
+        font-family: "Nunito", sans-serif;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .cards1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .connect{
+        flex-direction: column;
+    }
+    .mail{
+        justify-content: center;
+        font-size: 18px;
+    }
+    .socialmedia{
+        justify-content: center;
+    }
+    .footer{
+        text-align: center;
+    }
+    /* .cards11, .cards22{
+        width: 35vw;
+    } */
+    .exp{
+        margin-top: 75px;
+    }
+    #t1,#t5,#t6,#t7{
+        font-size: 16px;
+    }
+    #t2 , h1{
+        font-size: 44px;
+    }
+    #t8{
+        font-size: 44px;
+    }
+    .textin1{
+        font-size: 35px;
+    }
+    .textin2{
+        font-size: 16px; 
+        text-align: center;
+    }
+    .intro{
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        margin-top: 70px;
+    }
+    .left{
+        margin-left: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #initials{
+        margin-right: 10px;
+    }
+    .card{
+        scale: 0.8;
+        gap: 0px;
+    }
+    .card:hover{
+        scale: 1.01;
+    }
+}
+
+/* Styles for tablets (max-width: 1024px) */
+@media (max-width: 768px) {
+    .abtleft{
+        margin: 0;
+        height: 300px;
+        width: 300px;
+    }
+    .abtright {
+        width:60%;
+    }
+    .abtright p{
+        font-size: 18px;
+    }
+    .mail{
+        font-size: 16px;
+    }
+
+    .mail , .socialmedia{
+        padding: 3px;
+    }
 }

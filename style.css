@@ -760,6 +760,9 @@ body {
     .mail , .socialmedia{
         padding: 3px;
     }
+    .intro{
+        height: 350px;
+    }
 
 }
 

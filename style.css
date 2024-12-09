@@ -400,7 +400,7 @@ body {
 }
 
 .auto_slider_container {
-    border-left: 2px solid #004266;
+    border-left: 2px solid #0ebbe6;
     max-width: 80vw;
     width: 100%;
     display: flex;
@@ -632,10 +632,12 @@ body {
 .sm1,.sm2,.sm3,.sm4, .gm{
     transition: 0.2s ease-out;
 }
-.sm1:hover,.sm2:hover,.sm3:hover,.sm4:hover, .gm:hover{
-    scale: 1.2;
+.sm1:hover,.sm2:hover,.sm3:hover,.sm4:hover{
+    scale: 1.15;
 }
-
+.gm:hover{
+    scale: 1.075;
+}
 /* General styles for mobile devices (max-width: 768px) */
 @media (max-width: 1267px) {
     .content {

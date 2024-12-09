@@ -704,10 +704,12 @@ body {
     #t8{
         font-size: 44px;
     }
+
     .textin1{
-        font-size: 35px;
+        font-size: 36px;
     }
     .textin2{
+        margin-top: 3px;
         font-size: 12px; 
         text-align: center;
     }
@@ -757,5 +759,18 @@ body {
 
     .mail , .socialmedia{
         padding: 3px;
+    }
+
+}
+
+@media (max-width: 391px) {
+    .textin1{
+        font-size: 28px;
+    }
+    .textin2{
+        font-size: 10px;
+    }
+    .intro{
+        height: 300px;
     }
 }

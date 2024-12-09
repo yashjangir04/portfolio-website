@@ -708,7 +708,7 @@ body {
         font-size: 35px;
     }
     .textin2{
-        font-size: 16px; 
+        font-size: 12px; 
         text-align: center;
     }
     .intro{
@@ -727,10 +727,14 @@ body {
     #initials{
         margin-right: 10px;
     }
-    .cards{
-    }
     .contact{
         margin-top: 65px;
+    }
+    .btns{
+        scale: 0.7;
+    }
+    .dp{
+        gap: 7px;
     }
 }
 
